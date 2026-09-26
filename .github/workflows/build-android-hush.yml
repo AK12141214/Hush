@@ -44,13 +44,13 @@ jobs:
 
       - name: Verify library
         run: |
-          ls -lh native/weya_nc_build/target/aarch64-linux-android/release/libweya_nc.so
-          file native/weya_nc_build/target/aarch64-linux-android/release/libweya_nc.so
+          ls -lh native/weya_nc_build/weya_nc/target/aarch64-linux-android/release/libweya_nc.so
+          file native/weya_nc_build/weya_nc/target/aarch64-linux-android/release/libweya_nc.so
 
       - name: Prepare artifact
         run: |
           mkdir -p output/arm64-v8a
-          cp native/weya_nc_build/target/aarch64-linux-android/release/libweya_nc.so \
+          cp native/weya_nc_build/weya_nc/target/aarch64-linux-android/release/libweya_nc.so \
              output/arm64-v8a/libweya_nc.so
 
       - name: Upload Android ARM64 library

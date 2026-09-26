@@ -36,7 +36,7 @@ jobs:
           EOF2
 
       - name: Build Hush native library
-        working-directory: native/weya_nc_build/weya_nc
+        working-directory: native/weya_nc_build/weya_nc/weya_nc
         run: |
           cargo build \
             --release \
